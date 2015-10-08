@@ -1,0 +1,17 @@
+// Java program to find total no. of trailing zeros in x!, where x is number
+public class TrailingZeros_InFactorial {
+
+	public static void main(String[] args){
+		int x = 28; // find no of trailing 0's in x!
+		int result = trailingZeros(x);
+		System.out.println("Trailing zeros in "+x+"! are: "+result );
+	}
+	
+	// trailing zeros = no. of 5's in prime factors of x!
+	static int trailingZeros(int x){
+		int count = 0;
+		for(int i=5; x/i >= 1; i*=5)
+			count+=x/i;
+		return count;
+	}
+}

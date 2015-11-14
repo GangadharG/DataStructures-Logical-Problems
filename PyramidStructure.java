@@ -1,7 +1,7 @@
 // A Java program which prints Pyramid structure
 //			*
-//		   ***
-//		  *****
+//		       ***
+//		      *****
 public class PyramidStructure {
 
 	public static void main(String args[]){
